@@ -9,16 +9,26 @@
     .thin-black-border {
         border-color: black;
         border-width: 2px;
-        border-style: dashed;
+        border-style: groove;
         border-radius: 180px;
     }
     
     .light-blue-background-color {
         background-color: aliceblue;
+        border-width: 1px;
+        border-style: solid;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     
     .light-gray-background-color {
         background-color: gainsboro;
+        border-width: 1px;
+        border-style: solid;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .page-border {
@@ -37,7 +47,12 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+    }
+    
+    body {
+        background-color: white;
+    }
+    
 </style>
 <head>
 <title>Kevin Kelly Online CV</title>
@@ -51,7 +66,8 @@
     <!-- Need to work out how to align this image centrally. HTML5 doesnt support img align attribute so need to add this when I learn CSS -->
     
     <a href="https://www.linkedin.com/in/iamkevinkelly/" target="_blank"><img class="thin-black-border center" src="https://media.licdn.com/dms/image/C5603AQH95X_jCT53OA/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=2hl_u-r-rhXAtI1OJF1stegLEs0UgaUdro_Bq2kNH1o"><br>
-    My LinkedIn profile</a>
+        My LinkedIn profile</a><br/>
+    <a href="mailto:kevinjkelly88@gmail.com">Email Me</a>
     
 <article>
     <h2 class="light-gray-background-color"><u>Jump to:</u></h2>
@@ -61,11 +77,12 @@
             <a href="#employment-history"><li>Employment History</li></a>
             <ul>
                 <a href="#humres"><li>Humres</li></a>
-                <a href="#placement-uk"><li>Placement UK</li></a>
-                <li>French Connection</li>
-                <li>COS</li>
-                <li>Urban Outfitters</li>
-                <li>AllSaints</li>
+                <a href="#placement-uk">   <li>Placement UK</li></a>
+                <a href="#french-connection">
+                <li>French Connection</li></a>
+                <a href="#cos"><li>COS</li></a>
+                <a href="#urban-outfitters"><li>Urban Outfitters</li></a>
+                <a href="#allsaints"><li>AllSaints</li></a>
             </ul>
             <a href="#education"><li>Education</li></a>
         </ul>
@@ -74,14 +91,14 @@
 </article>
 <article>
     <h2 id="profile" class="light-gray-background-color"><u>Profile</u></h2>
-    <section>
+    <section class="light-blue-background-color">
         A career minded, well-rounded recruitment professional with a 8 years experience in sales, and 3 and a half years in recruitment across retail, construction and software development. Adaptable with a focus on team integration and relationship building, looking to continually learn and develop. A person who has integrity both personally and professionally who wants to work for an organisation that shares the same values
         </section>
     
     <h2 id="employment-history" class="light-gray-background-color"><u>Employment History</u></h2>
     <section class="light-blue-background-color">
         <h4 id="humres">Humres Technical Recruitment<br/>
-        Tavistock Sq, Kings Cross<br/>
+        Kings Cross, London<br/>
         Employed: Dec 2015 - Aug 2018<br/>
             Position: Recruitment Consultant</h4>
         
@@ -101,7 +118,7 @@
         </section>
         <section class="light-blue-background-color">
             <h4 id="placement-uk">Placement UK<br/>
-            Chelsea<br/>
+            Chelsea, London<br/>
             Employed: Jan 2015 - Dec 2015<br/>
             Position: Recruitment Consultant</h4>
             Worked as a Recruitment Consultant for the most successful retail specific search consultancy in the UK
@@ -113,6 +130,51 @@
                 <li>Placed in roles ranging from an £18,000 Assistant Manager through to a £60,000 Senior Sales Manager </li>
                 <li>Placed candidates into over 90% of the clients we actively recruit for.</li>
             </ul>
+        </section>
+        <section class="light-blue-background-color">
+            <h4 id="french-connection">French Connection - <i>Temporary "F Brand" pop-up</i><br>
+            Old Street, London<br>
+            Employed: Aug 2014 - Dec 2014<br>
+            Position: Store Manager</h4>
+            <ul>
+            <li>Set-up, managed and closed down a new concept store within the brand. Worked closely with head office, external shopfitters and contractors to ensure smooth operations across all stages of the process.</li>
+            <li>Recruited, trained and developed the full team in store</li>
+            <li>Worked with Head Buyer, Head of Merchandising and Head of VM to create and implement stock packages relevant to the niche customer base in and around Old Street station.</li>
+            <li>Required to conduct weekly walkthroughs with the Area Manager and Head of Retail due to the high profile of the store. The store was continually visited by shareholders and the company owner which therefor required good knowledge of store, and polished communication skills in order to impart the right facts, figures and trading feedback.</li>
+            </ul>
+        </section>
+        <section class="light-blue-background-color">
+        <h4 id="cos">COS - Collection of Style<br>
+            Westfield White City, London<br>
+            Employed: Aug 2013 - Aug 2014<br>
+            Position: Menswear Manager</h4>
+            <ul>
+            <li>Directly responsible for the menswear and childrenswear departments in store, driving sales in store through effective staff training, report analysis, visual merchandising implementation and ensuring high customer service levels.</li></ul>
+        </section>
+        <section class="light-blue-background-color">
+        <h4 id="urban-outfitters">Urban Outfitters - Global Flagship<br>Oxford Circus, London<br>
+        Employed: Jul 2012 - Aug 2013<br>
+        Position: Department Manager</h4>
+        <ul>
+        <li>Running two departments concurrently, responsible for driving sales across the entry level showroom floor and the renewal (vintage) department. Both departments required different procedures of stock management, different floor cover requirements and differing senior buyer walkthroughs.</li>
+        <li>Responsible for training and development of senior sales staff and team leaders, for all departments across the store. This included monitoring development and regularly conducting appraisals throughout their training period to allow staff to perform above and beyond the expectations of their role</li>
+        </ul>
+        </section>
+        <section class="light-blue-background-color">
+        <h4 id="allsaints">AllSaints<br>
+        Employed: Feb 2010 - Jul 2012
+        <br><br>
+        Marketplace - Oxford Circus, London<br>
+        Employed: Jan 2012 - Jul 2012<br>
+        Position: Assistant Manager<br><br>
+        Selfridges - Oxford Street, London<br>
+        Employed: Feb 2010 - Dec 2012<br>
+        Position: Concession Manager
+        </h4>
+        <ul>
+        <li>Operationally involved in all departments in the store/concession from daily planning, KPI Management, to working with man hour planners to accommodate restricted payroll budgets</li>
+        <li>Trained and practiced in all aspects of employee management; giving appraisals and probationary reviews, staff disciplinaries and investigations, training and monitoring of staff progress and recruitment.</li>
+        </ul>
         </section>
     </article>
     
